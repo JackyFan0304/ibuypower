@@ -1,0 +1,33 @@
+/* Header.module.css */
+.navLink {
+    font-size: 15px; /* 設置字體大小 */
+    font-weight: 500; /* 設置字體粗細 */
+    color: #333; /* 設置文字顏色 */
+    padding-left: 14px; /* 左右內邊距 */
+    padding-right: 14px;
+    height: 74px; /* 高度與父容器（header）一致 */
+    display: flex; /* 使用 Flexbox 將內容垂直居中 */
+    align-items: center; /* 垂直居中對齊 */
+    position: relative; /* 為了定位下方紅線 */
+    pointer-events: cursor-pointer; /* 滑鼠懸停時顯示手型游標 */
+}
+
+.navLink::after {
+    content: ""; /* 偽元素，用於顯示紅線 */
+    position: absolute;
+    bottom: 0; /* 紅線位於文字下方 */
+    left: 0;
+    width: 0%; /* 初始寬度為 0 */
+    height: 2px; /* 紅線高度 */
+    background-color: red; /* 紅線顏色 */    
+}
+
+.navLink:hover::after {
+    width: 100%; /* 滑鼠懸停時，紅線展開到整個文字寬度 */
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+}
+  
