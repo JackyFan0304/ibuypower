@@ -1,7 +1,7 @@
 /* Header.module.css */
 .navLink {
     font-size: 15px; /* 設置字體大小 */
-    font-weight: 500; /* 設置字體粗細 */
+    font-weight: 400; /* 設置字體粗細 */
     color: #333; /* 設置文字顏色 */
     padding-left: 14px; /* 左右內邊距 */
     padding-right: 14px;
@@ -30,4 +30,11 @@
     width: 20px;
     height: 20px;
 }
+
+.navItem {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+  
   
