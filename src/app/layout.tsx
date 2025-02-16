@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header/Header"; // 引入 Header 組件
+import Carousel from "@/components/Carousel/Carousel1"; // 引入 Carousel 組件
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -23,6 +24,12 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const slides = [
+    'Up to an EXTRA $300 OFF Custom PCs!',
+    'Free Shipping on Orders Over $50!',
+    'Limited Time Offers Available Now!',
+  ];
+
   return (
     <html lang="en">
       <body
@@ -30,7 +37,8 @@ export default function RootLayout({
       >
         {/* 加入 Header */}
         <Header />
-
+        {/* 輪播圖區塊 */}
+        <Carousel slides={slides} />
         {/* 主內容 */}
         {children}
       </body>
