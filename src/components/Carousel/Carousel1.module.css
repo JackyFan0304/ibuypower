@@ -1,0 +1,56 @@
+.carouselContainer {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f5f5; /* 背景顏色改為淺灰色 */
+    position: relative;
+    overflow: hidden; /* 隱藏超出部分 */
+  }
+  
+  .carouselContent {
+    width: 1500px;
+    height: 50px;
+    display: flex;
+    transition: transform 0.5s ease-in-out; /* 添加平滑滑動效果 */
+  }
+  
+  .slide {
+    flex-shrink: 0;
+    width: 1500px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px; /* 字體大小 */
+    font-weight: bold; /* 粗體字 */
+    color: #333; /* 字體顏色 */
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .slide.active {
+    opacity: 1;
+  }
+  
+  .navButton {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: none;
+    font-size: large; /* 調整按鈕大小 */
+    cursor: pointer;
+    color: #6d5f5f;
+    z-index: 10;
+  }
+  
+  .navButton:first-of-type {
+    left: calc(50% - 750px - 20px); /* 左側按鈕定位 */
+  }
+  
+  .navButton:last-of-type {
+    right: calc(50% - 750px - 20px); /*右側按鈕定位*/
+  }
+  
