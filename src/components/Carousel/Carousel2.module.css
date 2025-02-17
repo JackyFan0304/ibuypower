@@ -1,0 +1,79 @@
+.carousel {
+    position: relative;
+    width: 100%;
+    height: 630px;
+    overflow: hidden;
+}
+
+.slidesContainer {
+    display: flex;
+}
+
+.slide {
+    position: relative;
+    min-width: 100%;
+    height: 630px;
+}
+
+.textOverlay {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+    color: white;
+    text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+    max-width: 40%; /* 限制文字區塊寬度，避免過長 */
+}
+
+.textOverlay h1 {
+    font-size: 3rem; /* 調整標題大小 */
+    margin-bottom: 20px;
+    font-weight: bold; /* 加強標題字體粗細 */
+}
+
+.textOverlay p {
+    font-size: 1.2rem;
+    margin-bottom: 20px; /* 增加段落與按鈕間距 */
+    line-height: 1.5; /* 增加行距，提升可讀性 */
+}
+
+
+.textOverlay button {
+    padding: 10px 20px;
+    background-color: #ff0000; /* 按鈕背景為紅色 */
+    color: white; /* 按鈕文字為白色 */
+    border-radius: 50px; /* 圓角 */
+    border: 1.5px solid white; /* 外圈白色邊框 */
+    cursor: pointer; /* 滑鼠移上時顯示手型指標 */
+    text-transform: uppercase; /* 按鈕文字轉大寫 */
+    margin-top: 20px;
+
+    /* 底部紅色霓虹發亮陰影 */
+    box-shadow: 
+        0px 4px 10px rgba(255, 0, 0, 0.8), /* 紅色發光陰影 */
+        0px 0px 20px rgba(255, 0, 0, 0.6); /* 更柔和的紅色光暈 */
+}
+  
+.navButton {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px; /* 調整按鈕大小 */
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    z-index: 100; /* 確保按鈕位於圖片與文字上方 */
+}
+
+.navButton.prev {
+    left: 20px; /* 左箭頭距離左側20px */
+}
+
+.navButton.next {
+    right: 20px; /* 右箭頭距離右側20px */
+}
+
+  
