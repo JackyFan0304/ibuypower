@@ -25,7 +25,7 @@ export default function Header() {
   };
 
   return (
-    <header className="flex items-center justify-center bg-white shadow-md" style={{ width: '1903px', height: '75px' }}>
+    <header className="flex items-center justify-center bg-white shadow-md" style={{ width: '100%', height: '75px' }}>
       {/* 左側 Logo */}
       <div className="flex h-full items-center px-4">
         <Link href="/">
