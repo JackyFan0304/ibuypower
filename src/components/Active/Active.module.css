@@ -1,0 +1,63 @@
+.outerContainer {
+    width: 100%;
+    height: 160px;
+    margin: 48px auto; /* 上下 margin 為 48px，左右自動置中 */
+    padding-left: 201.5px; /* 左側 padding */
+    padding-right: 201.5px; /* 右側 padding */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff; /* 可根據需求調整背景色 */
+}
+
+.innerContainer {
+    width: 1500px;
+    display: flex;
+    align-items: center;
+}
+
+.imageContainer img {
+    width: 510px;
+    height: auto; /* 確保圖片比例正確 */
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.textContainer {
+    flex: 1;
+    background-color: #000; /* 黑色背景 */
+    color: #fff; /* 白色文字 */
+    padding: 13px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.textContainer h2 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.textContainer {
+    flex: 1;
+    background-color: #000; /* 黑色背景 */
+    color: #fff; /* 白色文字 */
+    padding: 51px;
+    display: flex; /* 使用 Flexbox */
+    flex-direction: column; /* 垂直排列內容 */
+    justify-content: center; /* 垂直置中內容 */
+    position: relative; /* 為了讓按鈕絕對定位 */
+}
+
+.shopButton {
+    position: absolute; /* 絕對定位 */
+    right: 50px; /* 距離右側 50px */
+    top: 50%; /* 垂直置中 */
+    transform: translateY(-50%); /* 修正垂直置中的偏移 */
+    padding: 10px 20px;
+    background-color: transparent;
+    color: #fff; /* 白色文字 */
+    border: 1px solid #fff; /* 白色邊框 */
+    border-radius: 50px; /* 圓角 */
+    cursor: pointer;
+}
+  
