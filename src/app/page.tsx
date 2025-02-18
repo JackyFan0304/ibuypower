@@ -1,5 +1,6 @@
 import Carousel from '@/components/Carousel/Carousel2';
 import ActiveBlock from '@/components/Active/Active';
+import ProductList from '@/components/Products/ProductList';
 
 const slides = [
     {
@@ -33,6 +34,9 @@ const HomePage = () => {
 
       {/* Active 區塊 */}
       <ActiveBlock />
+
+      {/* 產品列表 */}
+      <ProductList />
       
     </main>
   );
