@@ -1,4 +1,5 @@
 import Carousel from '@/components/Carousel/Carousel2';
+import ActiveBlock from '@/components/Active/Active';
 
 const slides = [
     {
@@ -27,7 +28,12 @@ const slides = [
 const HomePage = () => {
   return (
     <main>
+      {/* 輪播區塊 */}
       <Carousel slides={slides} />
+
+      {/* Active 區塊 */}
+      <ActiveBlock />
+      
     </main>
   );
 };
