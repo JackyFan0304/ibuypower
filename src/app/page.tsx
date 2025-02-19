@@ -1,6 +1,9 @@
 import Carousel from '@/components/Carousel/Carousel2';
 import ActiveBlock from '@/components/Active/Active';
 import ProductList from '@/components/Products/ProductList';
+import IntroSection1 from '@/components/IntroSection/IntroSection1';
+import IntroSection2 from '@/components/IntroSection/IntroSection2';
+import IntroSection3 from '@/components/IntroSection/IntroSection3';
 
 const slides = [
     {
@@ -37,7 +40,13 @@ const HomePage = () => {
 
       {/* 產品列表 */}
       <ProductList />
+
+      {/* IntroSection 區塊 */}
+      <IntroSection1 />
+
+      <IntroSection2 />
       
+      <IntroSection3 />
     </main>
   );
 };
