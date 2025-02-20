@@ -4,6 +4,7 @@ import ProductList from '@/components/Products/ProductList';
 import IntroSection1 from '@/components/IntroSection/IntroSection1';
 import IntroSection2 from '@/components/IntroSection/IntroSection2';
 import IntroSection3 from '@/components/IntroSection/IntroSection3';
+import IntroSection4 from '@/components/IntroSection2/IntroSection2-1';
 
 const slides = [
     {
@@ -47,6 +48,9 @@ const HomePage = () => {
       <IntroSection2 />
       
       <IntroSection3 />
+
+      {/* IntroSection2 區塊 */}
+      <IntroSection4 />
     </main>
   );
 };
