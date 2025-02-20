@@ -1,0 +1,94 @@
+.container {
+    display: flex;
+    gap: 20px;
+    max-width: 100%;
+    margin-top: 20px;   
+    justify-content: center; /* 新增：讓 column 水平置中 */
+    align-items: center; /* 新增：讓 column 垂直置中 */
+    color: #000;
+}
+  
+.column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    background-color: #e2e9e9;
+    align-items: center; /* 讓column內的元素水平置中 */
+    justify-content: center; /* 讓column內的元素垂直置中 */
+}
+  
+.content {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* 確保內容元素都置中 */
+    width: 60%; /* 確保內容寬度完整 */
+}
+  
+.content h2 {
+    margin-top: 20px;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+  
+.content p {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;    
+    font-weight: 600;
+}
+  
+.button {
+    padding: 0.8rem 2rem;
+    background: transparent;
+    border: 1px solid #000;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+  
+.button:hover {
+    background: #000;
+    color: #fff;
+}
+  
+.imageWrapper {
+    width: 50%; /* 確保圖片容器寬度完整 */
+    display: flex;
+    justify-content: center;
+}
+  
+  /* RWD 設計 */
+@media (max-width: 768px) {
+  .container {
+      flex-direction: column;
+      padding: 1rem;
+  }
+  
+  .content h2 {
+      font-size: 1.5rem;
+  }
+  
+  .content p {
+      font-size: 0.9rem;
+  }
+  
+  .button {
+      padding: 0.6rem 1.5rem;
+  }
+}
+  
+  @media (max-width: 480px) {
+  .content h2 {
+      font-size: 1.3rem;
+  }
+  
+  .button {
+      width: 100%;
+      max-width: 200px;
+      margin: 0 auto;
+  }
+}
+  
