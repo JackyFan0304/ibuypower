@@ -5,6 +5,7 @@ import IntroSection1 from '@/components/IntroSection/IntroSection1';
 import IntroSection2 from '@/components/IntroSection/IntroSection2';
 import IntroSection3 from '@/components/IntroSection/IntroSection3';
 import IntroSection4 from '@/components/IntroSection2/IntroSection2-1';
+import Advantage from '@/components/Advantage/Advantage';
 
 const slides = [
     {
@@ -51,6 +52,10 @@ const HomePage = () => {
 
       {/* IntroSection2 區塊 */}
       <IntroSection4 />
+
+      {/* Advantage 區塊 */}
+      <Advantage />
+      
     </main>
   );
 };
