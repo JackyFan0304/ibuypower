@@ -1,0 +1,93 @@
+
+.container {
+    width: 100%;
+    max-width: 1500px;
+    margin: 0 auto;
+}
+  
+.title {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+  
+.feedbackWrapper {
+    display: flex;
+    gap: 15px;
+    justify-content: space-between;
+}
+  
+.feedbackCard {
+    flex: 1;
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 24px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+  
+.logo {
+    width: 320px;
+    height: auto;
+    object-fit: contain;
+}
+  
+.stars {
+    width: 167;
+    height: auto;
+}
+  
+  /* RWD設計 */
+  @media screen and (max-width: 1024px) {
+  .container {
+      padding: 30px 15px;
+  }
+    
+  .logo {
+      width: 150px;
+  }
+    
+  .stars {
+      width: 100px;
+  }
+}
+  
+  @media screen and (max-width: 768px) {
+  .feedbackWrapper {
+      flex-direction: column;
+      gap: 20px;
+  }
+    
+  .feedbackCard {
+      width: 100%;
+  }
+    
+  .logo {
+      width: 160px;
+  }
+}
+  
+  @media screen and (max-width: 480px) {
+  .title {
+      font-size: 1.5rem;
+      margin-bottom: 30px;
+  }
+    
+  .container {
+      padding: 20px 10px;
+  }
+    
+  .logo {
+      width: 140px;
+  }
+    
+  .stars {
+      width: 90px;
+  }
+}
+  
