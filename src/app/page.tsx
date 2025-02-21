@@ -7,6 +7,9 @@ import IntroSection3 from '@/components/IntroSection/IntroSection3';
 import IntroSection4 from '@/components/IntroSection2/IntroSection2-1';
 import Advantage from '@/components/Advantage/Advantage';
 import CustomerFeedback from '@/components/CustomerFeedback/CustomerFeedback';
+import Footer from '@/components/Footer/Footer';
+import Footer2 from '@/components/Footer/Footer2';
+import Footer3 from '@/components/Footer/Footer3';
 
 const slides = [
     {
@@ -59,6 +62,13 @@ const HomePage = () => {
 
       {/* CustomerFeedback 區塊 */}
       <CustomerFeedback />
+
+      {/* Footer */}
+      <Footer />
+
+      <Footer2 />
+
+      <Footer3 />
       
     </main>
   );

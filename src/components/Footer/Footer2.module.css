@@ -1,0 +1,87 @@
+.footer {
+    width: 100%;
+    background-color: #f5f5f5;    
+}
+  
+.topSection {
+    max-width: 1320px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+  
+.navColumns {
+    display: flex;
+    gap: 60px;
+}
+  
+.column {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+  
+.column h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+  
+.column a {
+    color: #666;
+    text-decoration: none;
+    font-size: 14px;
+}
+  
+.rightSection {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 16px;
+}
+  
+.socialIcons {
+    display: flex;
+    gap: 12px;
+}
+  
+.contact {
+    font-size: 14px;
+    color: #333;
+}
+  
+.promotion {
+    font-size: 14px;
+    color: #666;
+}
+  
+.brandSection {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+  
+.bottomSection {
+    max-width: 1320px;
+    margin: 40px auto 0;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #00000093;
+}
+  
+.poweredBy,
+.purchaseFrom {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+  
+.poweredBy span,
+.purchaseFrom span {
+    font-size: 12px;
+    color: #666;
+    text-transform: uppercase;
+}
+  
